@@ -1,5 +1,74 @@
 <resources>
     <string name="app_name">Food-HQ</string>
     <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 
+    <string-array name="Constituency">
+        <item>Dagoreti North</item>
+        <item>Dagoreti South</item>
+        <item>Westlands</item>
+        <item>Langata</item>
+        <item>Kibera</item>
+        <item>Roysambu</item>
+        <item>Kasarani</item>
+        <item>Ruaraka</item>
+        <item>Embakasi South</item>
+        <item>Embakasi North</item>
+        <item>Embakasi Central</item>
+        <item>Embakasi East</item>
+        <item>Embakasi West</item>
+        <item>Makadara</item>
+        <item>Kamukunji</item>
+        <item>Starehe</item>
+        <item>Mathare</item>
+    </string-array>
+
+    <string-array name="shipper">
+        <item>Shipper 1</item>
+        <item>Shipper 2</item>
+    </string-array>
+
+    <string-array name="DishName">
+        <item>Streetwise 2 + Free Soda</item>
+        <item>Streetwise 3</item>
+        <item>Streetwise 2</item>
+        <item>Streetwise 1</item>
+        <item>Sticky fiver with Family Chips</item>
+        <item>Streetwise 5</item>
+        <item>Duos Bucket</item>
+        <item>Bazu burger</item>
+        <item>Colonel bucket feast</item>
+        <item>Zinger/Hot wings</item>
+        <item>Spanish Omellete</item>
+        <item>Deli Feast</item>
+        <item>Chicken Curry</item>
+        <item>Chicken Samosa</item>
+        <item>Pork Spare Ribs</item>
+        <item>Masala Chips</item>
+        <item>Plain Chips</item>
+        <item>Meat Pie</item>
+        <item>White Forest</item>
+        <item>Blue Berry Cake</item>
+        <item>Iced Mocha</item>
+        <item>Iced Coffee</item>
+        <item>Mango Juice</item>
+        <item>Passion Juice</item>
+        <item>Large Classic Pizza</item>
+        <item>Hawaiian Classic Pizza</item>
+        <item>Boerewors Classic Pizza</item>
+        <item>Peri-Peri Chicken</item>
+        <item>Chicken Tikka</item>
+        <item>Beef Lasagna</item>
+        <item>Mac and Cheese</item>
+        <item>Minute Maid</item>
+        <item>Sprite Lemon Lime Soda Drink 2 Litre Bottle</item>
+        <item>Orchid Valley Delight Apple Drink(1 ltr)</item>
+        <item>Don Montego Whisky 500 ml</item>
+        <item>Pierre Marcel Sweet Red (1.5 ltr)</item>
+        <item>Finca La Moras Malbec (750ml)</item>
+        <item>Kenyan Originals Mango and Ginger (330ml)</item>
+        <item>Savannah Dry (330ml)</item>
+        <item>Weston Vintage Rose 500ml</item>
+    </string-array>
 </resources>

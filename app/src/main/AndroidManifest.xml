@@ -10,6 +10,39 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodHQ">
         <activity
+            android:name=".Delivery_Login"
+            android:exported="true" />
+        <activity
+            android:name=".Delivery_LoginPhone"
+            android:exported="true" />
+        <activity
+            android:name=".Delivery_registeration"
+            android:exported="true" />
+        <activity
+            android:name=".Registeration"
+            android:exported="true" />
+        <activity
+            android:name=".LoginPhone"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:name=".RestaurantRegisteration"
+            android:exported="true" />
+        <activity
+            android:name=".Restaurantloginphone"
+            android:exported="true" />
+        <activity
+            android:name=".RestaurantLogin"
+            android:exported="true" />
+        <activity
+            android:name=".ChooseOne"
+            android:exported="true" />
+        <activity
+            android:name=".MainMenu"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
