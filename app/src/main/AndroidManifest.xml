@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodHQ">
         <activity
+            android:name=".Restaurantsendotp"
+            android:exported="true" />
+        <activity
+            android:name=".RestaurantForgotPassword"
+            android:exported="true" />
+        <activity
+            android:name=".RestaurantFoodPanel_BottomNavigation"
+            android:exported="true" />
+        <activity
+            android:name=".RestaurantVerifyPhone"
+            android:exported="true" />
+        <activity
             android:name=".Delivery_Login"
             android:exported="true" />
         <activity
