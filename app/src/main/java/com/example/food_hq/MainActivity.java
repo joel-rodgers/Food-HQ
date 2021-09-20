@@ -58,8 +58,8 @@ public class MainActivity extends AppCompatActivity {
                             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                 String role = dataSnapshot.getValue(String.class);
                                 if (role.equals("Customer")) {
-                                    //Intent n = new Intent(MainActivity.this, CustomerFoodPanel_BottomNavigation.class);
-                                    //startActivity(n);
+                                    Intent n = new Intent(MainActivity.this, CustomerFoodPanel_BottomNavigation.class);
+                                    startActivity(n);
                                     finish();
                                 }
                                 if (role.equals("Restaurant")) {
@@ -68,8 +68,8 @@ public class MainActivity extends AppCompatActivity {
                                     finish();
                                 }
                                 if (role.equals("DeliveryPerson")) {
-                                    //Intent intent = new Intent(MainActivity.this, Delivery_FoodPanelBottomNavigation.class);
-                                    //startActivity(intent);
+                                    Intent intent = new Intent(MainActivity.this, Delivery_FoodPanelBottomNavigation.class);
+                                    startActivity(intent);
                                     finish();
                                 }
                             }

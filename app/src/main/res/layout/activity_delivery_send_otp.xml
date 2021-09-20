@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pic9"
-    tools:context=".RestaurantVerifyPhone">
+    tools:context=".Delivery_SendOtp">
 
     <LinearLayout
         android:id="@+id/linearlayout"
         android:layout_width="280dp"
-        android:layout_height="320dp"
+        android:layout_height="380dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -40,6 +40,7 @@
             android:fontFamily="monospace"
             android:textStyle="italic"/>
 
+
         <EditText
             android:id="@+id/phoneno"
             android:layout_width="match_parent"
@@ -47,7 +48,6 @@
             android:ems="10"
             android:inputType="number"
             android:hint="OTP"
-            android:layout_marginTop="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -59,17 +59,17 @@
             android:id="@+id/Verify"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="26dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/btnblueish"
-            android:textColor="@color/white"
             android:text="Verify"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Lpassword"
-            app:layout_constraintVertical_bias="0.174" />
-
+            app:layout_constraintVertical_bias="0.174"
+            android:textSize="18sp"/>
 
         <Button
             android:id="@+id/Resendotp"
@@ -77,14 +77,15 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="26dp"
             android:background="@drawable/btnred"
-            android:text="Resend otp"
+            android:text="Resend"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Verify"
-            app:layout_constraintVertical_bias="0.174" />
+            app:layout_constraintVertical_bias="0.174"
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/text"
@@ -96,9 +97,6 @@
             android:textAlignment="center"
             android:textColor="@color/gray"
             android:textSize="16dp" />
-
-
-
 
 
     </LinearLayout>

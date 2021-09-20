@@ -114,7 +114,7 @@ public class RestaurantRegisteration extends AppCompatActivity {
                                     public void onComplete(@NonNull Task<Void> task) {
                                         HashMap<String, String> hashMappp = new HashMap<>();
                                         hashMappp.put("Area", Area);
-                                        hashMappp.put("City", constituency);
+                                        hashMappp.put("Constituency", constituency);
                                         hashMappp.put("ConfirmPassword", confirmpassword);
                                         hashMappp.put("EmailID", emailid);
                                         hashMappp.put("Vname", vname);
@@ -177,6 +177,26 @@ public class RestaurantRegisteration extends AppCompatActivity {
 
             }
 
+        });
+
+        Emaill.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(RestaurantRegisteration.this, RestaurantLogin.class);
+                startActivity(i);
+                finish();
+            }
+        });
+
+        Phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent e = new Intent(RestaurantRegisteration.this, Restaurantloginphone.class);
+                startActivity(e);
+                finish();
+            }
         });
 
 
