@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pic4"
+    android:background="@drawable/pic6"
     tools:context=".Delivery_registeration">
 
     <ScrollView
@@ -183,10 +183,7 @@
                 android:layout_height="40dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/button_shape"
-                android:text="REGISTER"
-                android:textSize="15sp"
-                android:textAlignment="center"
-                android:gravity="center_horizontal"
+                android:text="Register"
                 android:textColor="#FFFFFF" />
 
             <LinearLayout
@@ -250,11 +247,9 @@
                     android:background="@drawable/btnred"
                     android:drawableLeft="@drawable/whitemail"
                     android:padding="10dp"
-                    android:text="EMAIL"
-                    android:textSize="15sp"
-                    android:textAlignment="center"
+                    android:text="Email"
                     android:textColor="#FFFFFF"
-                    android:gravity="center_horizontal" />
+                     />
 
                 <Button
                     android:id="@+id/Phonenumber"
@@ -267,11 +262,9 @@
                     android:drawableLeft="@drawable/phonewhite"
                     android:drawablePadding="5dp"
                     android:padding="8dp"
-                    android:text="PHONE"
-                    android:textSize="15sp"
-                    android:textAlignment="center"
+                    android:text="Phone"
                     android:textColor="#FFFFFF"
-                    android:gravity="center_horizontal" />
+                     />
             </LinearLayout>
 
         </LinearLayout>

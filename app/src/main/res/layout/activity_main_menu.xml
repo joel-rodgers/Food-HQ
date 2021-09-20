@@ -63,9 +63,7 @@
             android:background="@drawable/btnred"
             android:drawableLeft="@drawable/whitemail"
             android:paddingLeft="10dp"
-            android:text="SIGNIN WITH EMAIL"
-            android:textSize="15sp"
-            android:textAlignment="center"
+            android:text="Signin with email"
             android:textColor="@color/white" />
 
         <Button
@@ -77,9 +75,7 @@
             android:background="@drawable/btnblueish"
             android:drawableLeft="@drawable/phonewhite"
             android:paddingLeft="10dp"
-            android:text="SIGNIN WITH PHONE"
-            android:textSize="15sp"
-            android:textAlignment="center"
+            android:text="Signin with phone"
             android:textColor="@color/white" />
 
         <LinearLayout
@@ -123,9 +119,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="25dp"
             android:background="@drawable/button_shape"
-            android:text="SIGNUP"
-            android:textSize="15sp"
-            android:textAlignment="center"
+            android:text="Signup"
             android:textColor="@color/white" />
 
     </LinearLayout>

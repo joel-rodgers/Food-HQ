@@ -90,10 +90,7 @@
             android:layout_height="40dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/button_shape"
-            android:text="LOGIN"
-            android:textSize="15sp"
-            android:textAlignment="center"
-            android:gravity="center_horizontal"
+            android:text="Login"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -172,10 +169,7 @@
             android:background="@drawable/btnblueish"
             android:drawableLeft="@drawable/phonewhite"
             android:padding="10dp"
-            android:text="PHONE"
-            android:textSize="15sp"
-            android:textAlignment="center"
-            android:gravity="center_horizontal"
+            android:text="Phone"
             android:textColor="@color/white" />
 
 

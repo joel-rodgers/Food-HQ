@@ -47,9 +47,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:background="#FA3E03"
-            android:text="CONNECT AS RESTAURANT"
-            android:textSize="15sp"
-            android:textAlignment="center"
+            android:text="Connect as restaurant"
             android:textColor="@color/white" />
 
         <Button
@@ -59,9 +57,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:background="#FA3E03"
-            android:text="CONNECT AS CUSTOMER"
-            android:textSize="15sp"
-            android:textAlignment="center"
+            android:text="Connect as customer"
             android:textColor="@color/white" />
 
         <Button
@@ -72,7 +68,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginBottom="30dp"
             android:background="#FA3E03"
-            android:text="CONNECT AS DELIVERY PERSON"
+            android:text="Connect as delivery person"
             android:textSize="15sp"
             android:textAlignment="center"
             android:textColor="@color/white" />

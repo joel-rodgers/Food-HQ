@@ -162,10 +162,8 @@
                 android:layout_marginTop="20dp"
                 android:textColor="@color/white"
                 android:background="@drawable/button_shape"
-                android:text="REGISTER"
-                android:textSize="15sp"
-                android:textAlignment="center"
-                android:gravity="center_horizontal" />
+                android:text="Register"
+                />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -232,11 +230,8 @@
                     android:background="@drawable/btnred"
                     android:drawableLeft="@drawable/whitemail"
                     android:padding="10dp"
-                    android:text="EMAIL"
-                    android:textSize="15sp"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:gravity="center_horizontal" />
+                    android:text="Email"
+                    android:textColor="@color/white" />
 
                 <Button
                     android:id="@+id/phone"
@@ -248,11 +243,9 @@
                     android:drawableLeft="@drawable/phonewhite"
                     android:drawablePadding="5dp"
                     android:padding="10dp"
-                    android:text="PHONE"
-                    android:textSize="15sp"
-                    android:textAlignment="center"
+                    android:text="Phone"
                     android:textColor="@color/white"
-                    android:gravity="center_horizontal" />
+                    />
 
 
             </LinearLayout>
