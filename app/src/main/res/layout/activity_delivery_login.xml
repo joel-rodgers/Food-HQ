@@ -10,7 +10,7 @@
     <LinearLayout
         android:id="@+id/linearlayout"
         android:layout_width="280dp"
-        android:layout_height="446dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -162,7 +162,7 @@
 
         <Button
             android:id="@+id/dbtnphone"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:layout_marginTop="12dp"

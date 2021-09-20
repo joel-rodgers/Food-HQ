@@ -148,10 +148,9 @@ public class Registeration extends AppCompatActivity {
                                                                     public void onClick(DialogInterface dialog, int which) {
 
                                                                         dialog.dismiss();
-                                                                        String phonenumber = Cpp.getSelectedCountryCodeWithPlus() + mobileno;
-                                                                        Intent b = new Intent(Registeration.this, VerifyPhone.class);
-                                                                        b.putExtra("phonenumber", phonenumber);
-                                                                        startActivity(b);
+                                                                        Intent intent = new Intent(Registeration.this,VerifyPhone.class);
+                                                                        intent.putExtra("Mobileno", mobileno);
+                                                                        startActivity(intent);
 
                                                                     }
                                                                 });

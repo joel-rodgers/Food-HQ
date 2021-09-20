@@ -1,6 +1,5 @@
 package com.example.food_hq;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -15,11 +14,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.gms.tasks.TaskExecutors;
 import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
+import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
 
 import java.util.concurrent.TimeUnit;
@@ -39,7 +38,7 @@ public class RestaurantVerifyPhone extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurant_verify_phone);
 
-        phonenumber = getIntent().getStringExtra("phonenumber").trim();
+        phonenumber = getIntent().getStringExtra("Mobile").trim();
 
         sendverificationcode(phonenumber);
         entercode = (EditText) findViewById(R.id.phoneno);
@@ -142,13 +141,18 @@ public class RestaurantVerifyPhone extends AppCompatActivity {
 
     private void sendverificationcode(String number) {
 
-        PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                number,
-                60,
-                TimeUnit.SECONDS,
-                (Activity) TaskExecutors.MAIN_THREAD,
-                mCallBack
-        );
+        //START PHONE AUTHENTICATION
+        PhoneAuthOptions options =
+                PhoneAuthOptions.newBuilder(FAuth)
+                            .setPhoneNumber(phonenumber)    // Phone number to verify
+                            .setTimeout(60L, TimeUnit.SECONDS) //Timeout and unit
+                            .setActivity(this)      // Activity (for callback binding)
+                            .setCallbacks(mCallBack)        // OnVerificationStateChangedCallbacks
+                            .build();
+        PhoneAuthProvider.verifyPhoneNumber(options);
+        // [END start_phone_auth]
+
+
     }
 
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks

@@ -142,10 +142,9 @@ public class RestaurantRegisteration extends AppCompatActivity {
 
                                                                     dialog.dismiss();
 
-                                                                    String phonenumber = Cpp.getSelectedCountryCodeWithPlus() + mobile;
-                                                                    Intent b = new Intent(RestaurantRegisteration.this, RestaurantVerifyPhone.class);
-                                                                    b.putExtra("phonenumber", phonenumber);
-                                                                    startActivity(b);
+                                                                    Intent intent = new Intent(RestaurantRegisteration.this,RestaurantVerifyPhone.class);
+                                                                    intent.putExtra("Mobile", mobile);
+                                                                    startActivity(intent);
 
                                                                 }
                                                             });

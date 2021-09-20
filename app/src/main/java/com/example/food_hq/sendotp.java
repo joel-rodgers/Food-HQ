@@ -1,6 +1,5 @@
 package com.example.food_hq;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -15,11 +14,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.gms.tasks.TaskExecutors;
 import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
+import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
 
 import java.util.concurrent.TimeUnit;
@@ -140,11 +139,14 @@ public class sendotp extends AppCompatActivity {
 
     private void sendverificationcode(String number) {
 
-        PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                number,
-                60,
-                TimeUnit.SECONDS,
-                (Activity) TaskExecutors.MAIN_THREAD,
+
+        PhoneAuthOptions options =
+                PhoneAuthOptions.newBuilder(FAuth)
+                .setPhoneNumber(phonenumber)
+                .setTimeout(60L, TimeUnit.SECONDS)
+                .setActivity(this)
+                        .build();
+        PhoneAuthProvider.verifyPhoneNumber(options);
                 new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
                     @Override
                     public void onCodeSent(String s, PhoneAuthProvider.ForceResendingToken forceResendingToken) {
@@ -170,8 +172,8 @@ public class sendotp extends AppCompatActivity {
 
                         Toast.makeText(sendotp.this, "THis 2:" + e.getMessage(), Toast.LENGTH_LONG).show();
                     }
-                }
-        );
+                };
+
     }
 
 

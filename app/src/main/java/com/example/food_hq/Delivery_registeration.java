@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
@@ -24,7 +23,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.hbb20.CountryCodePicker;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Delivery_registeration extends AppCompatActivity {
@@ -142,11 +140,9 @@ public class Delivery_registeration extends AppCompatActivity {
 
                                                                     dialog.dismiss();
 
-                                                                    String phonenumber = Cpp.getSelectedCountryCodeWithPlus() + mobile;
-                                                                    Intent b = new Intent(Delivery_registeration.this, Delivery_VerifyPhone.class);
-                                                                    b.putExtra("phonenumber", phonenumber);
-                                                                    startActivity(b);
-
+                                                                    Intent intent = new Intent(Delivery_registeration.this,Delivery_VerifyPhone.class);
+                                                                    intent.putExtra("Mobile", mobile);
+                                                                    startActivity(intent);
                                                                 }
                                                             });
                                                             AlertDialog alert = builder.create();
