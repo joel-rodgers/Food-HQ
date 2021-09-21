@@ -8,12 +8,19 @@
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/drawable/btnred.xml" value="0.1" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/drawable/button_shape.xml" value="0.1" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/drawable/camerashapebtn.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/drawable/ic_baseline_local_shipping_24.xml" value="0.1" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/drawable/ic_baseline_schedule_time_24.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.1" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/drawable/ic_camera_24.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/drawable/ic_email_black_24dp.xml" value="0.1" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/drawable/ic_orders_24.xml" value="0.1" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/drawable/ic_post_dish_menu_24.xml" value="0.1" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/drawable/ic_search_black_24dp.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/activity_choose_one.xml" value="0.18" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/activity_customer_food_panel_bottom_navigation.xml" value="0.1" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/activity_delivery_food_panel_bottom_navigation.xml" value="0.209375" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/activity_delivery_login.xml" value="0.1" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/activity_delivery_login_phone.xml" value="0.21" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/activity_delivery_registeration.xml" value="0.1" />
@@ -32,13 +39,25 @@
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/activity_restaurantloginphone.xml" value="0.22" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/activity_restaurantsendotp.xml" value="0.18" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/activity_sendotp.xml" value="0.209375" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/activity_update_delete_dish.xml" value="0.209375" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/activity_verify_phone.xml" value="0.22" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/customer_menudish.xml" value="0.1" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/fragment_customercart.xml" value="0.1" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/fragment_customerorders.xml" value="0.1" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/fragment_customerprofile.xml" value="0.1" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/fragment_customertrack.xml" value="0.1" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/fragment_deliverypendingorder.xml" value="0.1" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/fragment_deliveryshiporder.xml" value="0.1" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/fragment_restaurant_home.xml" value="0.1" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/fragment_restaurant_orders.xml" value="0.1" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/fragment_restaurant_pendingorders.xml" value="0.15" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/fragment_restaurant_profile.xml" value="0.1" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/restaurantmenu_update_delete.xml" value="0.209375" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/menu/customer_bottom_navigation.xml" value="0.209375" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/menu/delivery_bottom_navigation.xml" value="0.209375" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/menu/logout.xml" value="0.22" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/menu/restaurant_bottom_navigation.xml" value="0.33" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/menu/search.xml" value="0.1" />
       </map>
     </option>
   </component>

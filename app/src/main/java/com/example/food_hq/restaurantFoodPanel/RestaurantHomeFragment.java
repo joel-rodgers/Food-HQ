@@ -12,20 +12,29 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.food_hq.MainMenu;
 import com.example.food_hq.R;
+import com.example.food_hq.UpdateDishModel;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class RestaurantHomeFragment extends Fragment {
 
     RecyclerView recyclerView;
-   // private List<UpdateDishModel> updateDishModelList;
-    //private RestauranthomeAdapter adapter;
+    private List<UpdateDishModel> updateDishModelList;
+    private RestaurantHomeAdapter adapter;
     DatabaseReference dataaa;
-    private String State, City, Sub;
+    private String Area, Constituency;
 
     @Nullable
     @Override
@@ -33,8 +42,58 @@ public class RestaurantHomeFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_restaurant_home, null);
         getActivity().setTitle("Home");
         setHasOptionsMenu(true);
+
+        recyclerView = v.findViewById(R.id.Recycle_menu);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        updateDishModelList = new ArrayList<>();
+        String userid = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        dataaa = FirebaseDatabase.getInstance().getReference("Chef").child(userid);
+        dataaa.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                Restaurant restaurantc = dataSnapshot.getValue(Restaurant.class);
+                //Area = restaurantc.getArea();
+                //Constituency = restaurantc.getConstituency();
+                restaurantDishes();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+
         return v;
     }
+
+    private void restaurantDishes() {
+
+        String useridd = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("FoodSupplyDetails").child(useridd);
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                updateDishModelList.clear();
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    UpdateDishModel updateDishModel = snapshot.getValue(UpdateDishModel.class);
+                    updateDishModelList.add(updateDishModel);
+
+                }
+                adapter = new RestaurantHomeAdapter(getContext(), updateDishModelList);
+                recyclerView.setAdapter(adapter);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+    }
+
+
 
     @Override
     public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {

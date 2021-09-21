@@ -1,14 +1,69 @@
 package com.example.food_hq;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+import android.view.MenuItem;
 
-public class Delivery_FoodPanelBottomNavigation extends AppCompatActivity {
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+
+import com.example.food_hq.deliveryFoodPanel.DeliveryPendingOrderFragment;
+import com.example.food_hq.deliveryFoodPanel.DeliveryShipOrderFragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+public class Delivery_FoodPanelBottomNavigation extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delivery_food_panel_bottom_navigation);
+
+        BottomNavigationView navigationView = findViewById(R.id.delivery_bottom_navigation);
+        navigationView.setOnNavigationItemSelectedListener(this);
+        UpdateToken();
+        String name = getIntent().getStringExtra("PAGE");
+        if (name != null) {
+            if (name.equalsIgnoreCase("DeliveryOrderpage"))
+            {
+                loaddeliveryfragment(new DeliveryPendingOrderFragment());
+            }
+
+        } else {
+            loaddeliveryfragment(new DeliveryPendingOrderFragment());
+        }
+
+    }
+
+    private void UpdateToken() {
+
+        //FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+        //String refreshToken = FirebaseInstanceId.getInstance().getToken();
+       // Token token = new Token(refreshToken);
+        //FirebaseDatabase.getInstance().getReference("Tokens").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(token);
+    }
+
+    private boolean loaddeliveryfragment(Fragment fragment) {
+        if (fragment != null) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragment).commit();
+            return true;
+        }
+
+        return false;
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        Fragment fragment = null;
+        switch (item.getItemId()) {
+            case R.id.pendingorders:
+                fragment = new DeliveryPendingOrderFragment();
+                break;
+
+            case R.id.shiporders:
+                fragment = new DeliveryShipOrderFragment();
+                break;
+
+        }
+        return loaddeliveryfragment(fragment);
     }
 }
