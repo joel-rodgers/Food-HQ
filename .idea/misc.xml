@@ -7,6 +7,8 @@
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/drawable/btnblueish.xml" value="0.1" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/drawable/btnred.xml" value="0.1" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/drawable/button_shape.xml" value="0.1" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/drawable/camerashapebtn.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/drawable/ic_camera_24.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/drawable/ic_email_black_24dp.xml" value="0.1" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/drawable/ic_orders_24.xml" value="0.1" />
@@ -24,6 +26,7 @@
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/activity_registeration.xml" value="0.1" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/activity_restaurant_food_panel_bottom_navigation.xml" value="0.25" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/activity_restaurant_login.xml" value="0.22" />
+        <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/activity_restaurant_post_dish.xml" value="0.25" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/activity_restaurant_registeration.xml" value="0.18" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/activity_restaurant_verify_phone.xml" value="0.1" />
         <entry key="..\:/Users/Joel Rodgers K'obara/AndroidStudioProjects/FoodHQ/app/src/main/res/layout/activity_restaurantloginphone.xml" value="0.22" />

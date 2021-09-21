@@ -57,17 +57,17 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                 String role = dataSnapshot.getValue(String.class);
-                                if (role.equals("Customer")) {
+                                if (role !=null && role.equals("Customer")) {
                                     Intent n = new Intent(MainActivity.this, CustomerFoodPanel_BottomNavigation.class);
                                     startActivity(n);
                                     finish();
                                 }
-                                if (role.equals("Restaurant")) {
+                                if (role !=null && role.equals("Restaurant")) {
                                     Intent a = new Intent(MainActivity.this, RestaurantFoodPanel_BottomNavigation.class);
                                     startActivity(a);
                                     finish();
                                 }
-                                if (role.equals("DeliveryPerson")) {
+                                if (role !=null && role.equals("DeliveryPerson")) {
                                     Intent intent = new Intent(MainActivity.this, Delivery_FoodPanelBottomNavigation.class);
                                     startActivity(intent);
                                     finish();

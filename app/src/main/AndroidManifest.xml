@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodHQ">
         <activity
+            android:name=".restaurantFoodPanel.Restaurant_PostDish"
+            android:exported="true" />
+        <activity
             android:name=".Delivery_SendOtp"
             android:exported="true" />
         <activity
@@ -78,6 +81,7 @@
         <activity
             android:name=".MainMenu"
             android:exported="true" />
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
